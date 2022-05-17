@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+
+body{
+    --color-primary:#009579;
+    --color-primary-dark:#007f67;
+    --color-secondary:#252c6a;
+    --color-error:#cc3333;
+    --color-success:#4bb544;
+    --border-radius:4px;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url(./IMG/background.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background:#ffff;
+}
+
+.container,
+.form__input,
+.form__button{
+    font: 500 1rem 'Poppins', sans-serif;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success{
+    color: var(--color-success);
+}
+.form__message--error{
+    color: var(--color-error);
+}
+
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__input-group{
+    margin-bottom: 1rem;
+}
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: solid 1px lightgray;
+    outline: none;
+    background:#eeeeee;
+    transition: background-color .4s, border-color .4s;
+}
+.form__input:focus{
+    border-color:var(--color-primary);
+    background-color:white ;
+}
+/* .form__input--success{
+    color: var(--color-success);
+    border-color: var(--color-success);
+} */
+.form__input--error{
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+.form__input-error-message{
+    color: var(--color-error);
+    margin-top: .5rem;
+    font-size: .85rem;
+}
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+color: #ffffff;    
+    cursor:pointer;
+    outline: none;
+    border: none;
+    background: var(--color-primary);
+    transition: background .4s;
+}
+.form__button:hover{
+    background: var(--color-primary-dark);
+}
+.form__button:active{
+    transform: scale(.98);
+}
+.form__text{
+    text-align: center;
+}
+.form__link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+.form__link:hover{
+    text-decoration: underline;
+}
+
+
+
+

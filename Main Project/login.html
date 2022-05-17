@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- <form action="post" class="form" id="login"> -->
+            <h1 class="form__title">login</h1>
+            <div class="form__message form__message--error"> </div>
+
+            <div class="form__input-group">
+                <input type="text" onblur="checkEmail(event.target)" id="email" placeholder="Email" autofocus class="form__input">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" onblur="checkPassword(event.target)" id="password" placeholder="password" autofocus class="form__input">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <button class="form__button" onclick="formSubmit()" type="submit" >Continue</button>
+            <!-- <p class="form__text">
+                <a href="#" class="form__link"> Forgot your password? </a>
+            </p>
+            <p class="form__text">
+                <a id="linkCreateAccount" class="form__link"> Don't have an account ? creat account </a>
+            </p> -->
+        <!-- </form> -->
+    </div> 
+
+
+
+    <script src="login.js" ></script>
+</body>
+</html>

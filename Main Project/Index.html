@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- <div class="container">
+        <form action="post" class="form" id="login">
+            <h1 class="form__title">login</h1>
+            <div class="form__message form__message--error"> </div>
+            <div class="form__input-group">
+                <input type="text" placeholder="Username or Email" autofocus class="form__input">
+                <div class="form__input-error-message"> This is an error message</div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" placeholder="password" autofocus class="form__input">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit" >Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link"> Forgot your password? </a>
+            </p>
+            <p class="form__text">
+                <a id="linkCreateAccount" class="form__link"> Don't have an account ? creat account </a>
+            </p>
+        </form>
+    </div> -->
+    <div class="container">
+        
+        <!-- <form action="#" method="post" class="form" id="creatAccount"> -->
+            <h1 class="form__title">Regestration</h1>
+            <div class="form__message form__message--error"> </div>
+            <div class="form__input-group">
+                <input type="text" name="firstName" id="fname" onblur="checkName(event.target)" placeholder=" First Name" autofocus class="form__input">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" name="LastName" id="lname" onblur="checkName(event.target)" placeholder="Last Name"  class="form__input">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="email" name="Email" id="email" placeholder="Email" onblur="checkEmail(event.target)" class="form__input">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" name="password1" placeholder="password" maxlength="10" id="password1" onblur="checkPassword1(event.target)"  class="form__input password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" name="password2" placeholder=" confirm password " maxlength="10" id="password" onblur="checkPassword(event.target)" class="form__input password ">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit" onclick="formSubmit()">Continue</button>
+            <!-- <input type="submit"> -->
+            <!-- <p class="form__text">
+                <a href="#" class="form__link"> Forgot your password? </a>
+            </p>
+            <p class="form__text">
+                <a id="linkCreateAccount" class="form__link"> Don't have an account ? creat account </a>
+            </p> -->
+        <!-- </form> -->
+    </div>
+    
+    <script src="main.js" ></script>
+</body>
+</html>

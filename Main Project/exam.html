@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="exam.css">
+    </head>
+<body>
+    <div class="container"> 
+        <div class="top">
+            <div class="progress_Bar-container">
+                <div class="progress_bar" ></div>
+
+            </div>
+
+            <!-- <div class="progressBar"><progress value="0" max="50"></progress></div> -->
+
+        </div>
+
+
+        <div class="main">
+
+            <div class="qustion_container">
+
+                
+                <div id="qustion"  class="qustion">
+                    <div id="Qustion_Div"></div>
+                </div>
+
+                <div class="answers">
+                    <div id="choice_group" class="choice_group">
+                         <div class="choice">
+                            <span class="text" data-index="0" >mazen</span>
+                            <input type="checkbox" id="0" onclick='getAnswer(event.target)' value="0" class="checkbox" name="numOfQustion" >
+                        </div>
+                        <div class="choice">
+                            <span class="text"data-index="1" >metwaly</span>
+                            <input type="checkbox" id='1' onclick='getAnswer(event.target)' value="0" class="checkbox" name="numOfQustion" >
+                        </div>
+                        <div class="choice">
+                            <span class="text" data-index="2" >hassan</span>
+                            <input type="checkbox" id='2' onclick='getAnswer(event.target)' value="0" class="checkbox" name="numOfQustion" >
+                        </div>
+                        <div class="choice">
+                            <span class="text" data-index="3" >Youssef</span>
+                            <input type="checkbox" id="3" onclick='getAnswer(event.target)' value="0" class="checkbox" name="numOfQustion" >
+                        </div>
+                       
+                    </div>
+                </div>
+                
+                <div id="buttons_container" class="buttons">
+                    <div class="nextPrev">
+                        <button id="backword" onclick="prevQustion()" class="btn">Previous</button>
+                        <div id="currntQustionNum" value="0" >1</div>
+                        <button id="forword" onclick="nextQustion()" class="btn">Next</button>
+        
+                    </div>
+                    <button id="mark_btn"   onclick="markQustion()" class="btn"  > Mark</button>
+                </div>
+
+            </div>
+
+            <div id="sideBar"  class="sideBar">
+                <!-- <div class="marked_qustion">
+                    <span>marked qustion</span>
+                </div>
+                <div class="marked_qustion">
+                    <span>marked qustion</span>
+                </div>
+                <div class="marked_qustion">
+                    <span>marked qustion</span>
+                </div> -->
+            </div>
+
+            
+
+
+
+        </div>
+        
+        <div class="button">
+
+            <input class="form__button"  type="button" id="submit" onclick="endExam()" value="submit" >
+
+        </div>
+
+    </div>
+    <script src="exam.js" ></script>
+</body>
+</html>
